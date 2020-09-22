@@ -72,9 +72,12 @@ const styles = StyleSheet.create({
         borderWidth: 1,
     },
     font1:{
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: "bold",
-        fontFamily: "Cochin"
+        ...Platform.select({
+            ios: { fontFamily: 'AlNile-Bold', },
+            android: { fontFamily: 'serif' }
+        })
     },
     font2:{
 

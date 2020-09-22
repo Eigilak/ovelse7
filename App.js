@@ -5,7 +5,7 @@ import {createAppContainer} from "react-navigation";
 import HomeScreen from "./components/HomeScreen";
 import {createDrawerNavigator} from "react-navigation-drawer";
 import ProfileScreen from "./components/ProfileScreen";
-
+import PlatformScreen from "./components/PlatformScreen";
 
 
 const MyDrawerNavigator = createDrawerNavigator({
@@ -14,6 +14,9 @@ const MyDrawerNavigator = createDrawerNavigator({
   },
   Profil:{
     screen:ProfileScreen
+  },
+  Platform:{
+    screen:PlatformScreen
   }
 });
 
